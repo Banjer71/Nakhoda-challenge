@@ -1,0 +1,276 @@
+* {
+    /* outline: 1px solid rgb(151, 148, 148); */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #D1D1D1;
+    font-family: 'Open Sans', sans-serif;
+    /* box-sizing: border-box; */
+
+    
+}
+/* 
+*::before, *::after {
+    box-sizing: border-box;
+} */
+
+
+.material-icons {
+    background-color: #242424;
+    color: #6C6C6C;
+}
+
+a {
+    text-decoration: none;
+}
+body {
+    background: #171717;
+}
+/* ***************************
+*        Top menu            *
+*****************************/
+.top-nav {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin: 0 20px 0 20px;
+    font-size: 0.9rem;
+}
+
+.top-nav li {
+    margin: 0;
+    padding: 5px 15px;
+}
+
+.top-nav li a {
+    text-decoration: none;
+    color: #D1D1D1;
+}
+
+.top-nav li:nth-child(5) {
+    color:#fff;
+    margin-right: 780px;
+  }
+
+/* ***************************
+*        Main menu            *
+*****************************/
+
+ 
+.main-nav {
+    display: flex;
+    font-size: 0.8rem;
+    background-color: #242424;
+    box-shadow: 1px 14px 13px 0px rgba(31, 30, 30, 0.75);
+    margin-bottom: 3rem;
+    border: 1px solid #171717;
+}
+
+.main-nav li {
+    padding: 15px;
+    background-color: #242424;
+}
+
+.main-nav li a{
+    text-decoration: none;
+    color: #6C6C6C;
+    background-color: #242424;
+}
+
+.main-nav li:first-child a{
+    color: #B48375;
+}
+
+
+.main-nav li:nth-child(1) {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #171717;
+    font-size: 1.1rem;
+  }
+
+.main-nav li:nth-child(3) {
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #171717;
+    
+  }
+
+.main-nav li:nth-child(4) {
+    margin-right: 500px;
+    display: flex;
+    align-items: center;
+    border-right: none;
+  }
+
+.main-nav li:nth-child(5) {
+    border-left: 1px solid #171717;
+    border-right: none;
+  }
+
+.main-nav li:nth-child(8) {
+    border-right: 1px solid #171717;
+    
+  }
+
+.main-nav i {
+    display: block;
+    text-align: center; 
+}
+
+
+
+
+/* **********************************
+*          container                *
+*********************************** */
+main {
+    height: 100vh;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.intro {
+    padding: 10px;
+}
+
+h1 {
+    color: #DAA857;
+    display: inline-flex;
+}
+
+h1 .material-icons {
+    color: #DAA857;
+    font-size: 2.5rem;
+    display: inline-flex;
+    margin-right: 15px;
+    background: #171717;
+}
+
+.sub-info {
+    color: #DAA857;
+    font-size: 1rem;
+    padding: 15px;
+}
+
+.section {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box-menu {
+    margin:10px;
+    font-size: 0.8rem;
+}
+
+.box-menu li {
+    padding: 3px;
+}
+
+.number-two {
+    height: 150px;
+    background: #242424;
+    border-radius: 20px ;
+}
+
+.modal-box.one {
+    margin-top: 50px;
+    background: #242424;
+    border-bottom: 1px solid #171717;
+    border-radius: 20px  20px 0  0;
+    padding: 10px;
+}
+
+.third-menu {
+    background: #242424;
+    display: flex;
+    font-size: 0.8rem;
+
+}
+
+.third-menu li {
+    padding-right: 25px;
+    
+}
+
+.third-menu li:first-child {
+    margin-right: 50px;
+    margin-left: 25px;
+}
+
+.third-menu li:first-child a {
+    color: #B48375;
+}
+
+.third-menu a {
+    position: relative;
+    transition: opacity 150ms ease-in-out;
+}
+
+.third-menu li:nth-child(2) a:hover,
+.third-menu li:nth-child(3) a:hover
+{
+    color: #DAA857;
+}
+
+.third-menu li:nth-child(2) a::after,
+.third-menu li:nth-child(3) a::after
+ {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #DAA857;
+    position: absolute;
+    bottom: -.1em;
+    left: 0;
+    right: 0;
+    transform: scale(0,1);
+    transition: transform ease-in-out 250ms;
+}
+
+.third-menu li:nth-child(2) a:hover::after,
+.third-menu li:nth-child(3) a:hover::after
+ {
+    transform: scale(1,1);
+    
+}
+
+.forth-menu {
+    background: #242424;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    padding: 2rem;
+}
+
+.forth-menu li {
+    padding-right: 20px;
+}
+
+.forth-menu li:first-child {
+    margin-right: 20px;
+    margin-left: 15px;
+    
+}
+
+.forth-menu li:first-child a {
+    color: #B48375;
+}
+
+select {
+    width: 250px;
+    border-radius: 10px 10px 0 0;
+    background: #171717;
+    color: #D1D1D1;
+    border: none;
+    padding: 5px;
+    appearance: none;
+    outline: 0;
+}
+
+
